@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280, inital-scale=1.0">
-    <meta name="" description" content="A fan page tributed to Porter Robinson's Nurture album.">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="description" content="A fan page tributed to Porter Robinson's Nurture album.">
     <title>Nurture</title>
 
     <!--Favicon-->
@@ -24,7 +24,6 @@
         <!--logo images for both light and dark mode-->
         <div class="logo-imgs">
         <img src="images/porter light logo.png" alt="Porter Robinson laying face down in a field of mustard flowers" class="logo-light">
-        <img src="images/porter dark logo.png" alt="Porter Robinson laying face up in a dark grassy field" class="logo-dark">
         </div>
         <div class="logo-text">
             <span>NURTURE</span>
@@ -37,16 +36,14 @@
                 <li><a href="#connect">CONNECT</a></li>
             </ul>
         </nav>
-        <!--dark mode button-->
-        <button id="dark-toggle" type="button">Dark Mode</button>
+
     </header>
     <main>
         <!--Home Page-->
         <section class="hero" id="home">
-            <!--background images for light and dark mode-->
+            <!--background image-->
             <div class="hero-imgs">
                 <img src="images/light mode bg.png" alt="grassy field with small white flowers" class="hero-light">
-                <img src="images/background dark mode.png" alt="dark forest with a ray of sun shining through" class="hero-dark">
             </div>
             <div class="hero-text">
                 <h1>NURTURE</h1>
@@ -59,9 +56,14 @@
         </section>
 
         <!--Carousel-->
-        <section class="moments">
+        <section class="moments" id="moments">
             <h2 class="moments-header">MOMENTS</h2>
-            
+            <div class="carousel">
+              <button class="carousel-prev-btn"  type="button" aria-label="Previous Moment"><img src="images/potaro.png" alt=""></button>
+            </div>
+            <div class="carousel-collection">
+                <img src="images/porter robinson landscape.jpg" alt="Porter Robinson running across a large lush green grass with clear blue skies." id="carousel-img">
+            </div>
         </section>
     </main>
     <footer></footer>
