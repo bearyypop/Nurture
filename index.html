@@ -14,8 +14,9 @@
     <!--font link-->
     <link rel="stylesheet" href="https://use.typekit.net/fky8cpo.css">
 
-    <!--links to CSS and JS-->
+    <!--links to CSS, JS, and JQuery-->
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 
@@ -87,26 +88,49 @@
             <!--Into Nurture Tabs content-->
             <div class="nurture-content">
                 <div class="tab-panel" id="tracklist">
-
+                    <!--prototype tracklist in html until it's coded in JS-->
                     <div class="tracklist-content">
                         <div class="track-menu">
                             <div class="track-items" data-index="0">
                                 <img src="images/info icon.png" alt="green information icon" class="info-icon">
-                                <span class="track-title">likelife</span>
-                                <span class="track-length">1:35</span>
+                                <div class="track-text">
+                                    <span class="track-title">likelife</span>
+                                    <span class="track-length">1:35</span>
+                                </div>
+                            </div>
+                            <div class="track-items" data-index="1">
+                                <img src="images/info icon.png" alt="green information icon" class="info-icon">
+                                <div class="track-text">
+                                    <span class="track-title">look at the sky</span>
+                                    <span class="track-length">5:10</span>
+                                </div>
+                            </div>
+                            <div class="track-items" data-index="2">
+                                <img src="images/info icon.png" alt="green information icon" class="info-icon">
+                                <div class="track-text">
+                                    <span class="track-title">get your wish</span>
+                                    <span class="track-length">3:39</span>
+                                </div>
+                            </div>
+                            <div class="track-items" data-index="3">
+                                <img src="images/info icon.png" alt="green information icon" class="info-icon">
+                                <div class="track-text">
+                                    <span class="track-title">wind tempos</span>
+                                    <span class="track-length">6:04</span>
+                                </div>
                             </div>
                         </div>
-
+                        <!--right side content that includes the song title image, and a personal description from Porter Robinson-->
                         <div class="track-display">
-                            <img src="images/lifelike.png" alt="Nurture album visual for Lifelike" class="track-img">
+                            <img src="images/lifelike.png" alt="Nurture album visual for Lifelike" class="track-img" id="track-img">
 
-                            <h3>lifelike</h3>
-                            <p class="track-description"><em> I wanted to start off the album with the simplest and most
+                            <h3 id="song-title">lifelike</h3>
+                            <p class="track-description" id="track-description"><em> I wanted to start off the album with the simplest and most
                                     fundamental possible sounds, which is that “sample pop” and then the sound of the
                                     piano.there's this idea of a "window' or a "portal" that appears a lot in the
                                     nurture art... I think of lifelike as kind of serving that purpose on the album. a
                                     little portal into the worldview.</em></p>
-                            <span class="author">— Porter Robinson</span>
+                            <span class="author" id="author">— Porter Robinson</span>
                         </div>
                     </div>
                 </div>
