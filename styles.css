@@ -49,5 +49,41 @@ table {
 
 /***ROOTS***/
 :root{
-    
+	/**colors**/
+	--moss: #7a8f4a;
+   --sage: #6E8F74;
+   --forest:  #2f4f3e;
+
+   --sky: #Afc8DA;
+   --haze: #dce7ed;
+   --blue-shadow: #5F7C8a;
+
+   --mustard: #e3B84c;
+   --soft-yellow: #f2d98A;
+
+   --cream: #f7f6f2;
+   --warm-white: #efede7;
+
+   --ink: #2b2b2b;
+   --light-ink: #5a5a5a;
+
+   /**Shadows & glows**/
+   --shadow: rgba(47, 79, 62, 0.18);
+   --glow: rgba(227, 184, 76, 0.35);
+
+	/**fonts**/
+	--font-main: "Spectral", serif;
+	--font-accent: "DotGothic16", sans-serif;
+	--font-heading: "Magister", serif;
+}
+*, 
+*::before, 
+*::after{
+	box-sizing: border box;
+}
+
+header, main, footer{
+	width: 1280px;
+	margin: 0 auto;
+	padding-inline: 64px; 
 }
