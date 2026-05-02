@@ -81,9 +81,36 @@ table {
 *::after{
 	box-sizing: border box;
 }
-
+body{
+	margin: 0;
+	font-family: var(font-main);
+	color: var(--text-main);
+	line-height: 1.6;
+}
 header, main, footer{
+	width: 100%; 
+}
+.container{
 	width: 1280px;
 	margin: 0 auto;
-	padding-inline: 64px; 
+	padding-inline: 64px;
+}
+header{
+	min-height: 600px;
+	background-image: url(images/header-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
+main, footer{
+	background-image:url(images/light-mode-bg.png);
+}
+main{
+	display: block;
+}
+section{}
+
+.logo-imgs img{
+	width: 40px;
+	height: auto;
 }
