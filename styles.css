@@ -331,16 +331,50 @@ nav{
 	display: flex;
 	flex-direction: column;
 }
-.nurture-tabs, 
-.nurture-content{
-
+.nruture-framework{
+	display:flex;
+	gap: 40px;
+	align-items: flex-start;
 }
 .inside-header{
 	text-align: center;
 	margin-bottom: 40px;
+	font-family: var(--font-heading);
+	font-size: 32px;
+	letter-spacing: 10px;
+	color: var(--forest);
 }
 .nurture-tabs{
 	display: flex;
 	gap: 16px;
 	margin-bottom: 32px;
+	width: 25%;
+}
+.nurture-content{
+	width: 75%;
+}
+.info-icon{
+	width: 20px;
+	height: 20px;
+	object-fit: contain;
+}
+.track-items{
+	display: flex;
+	align-items: center;	
+	gap: 12px;
+	margin-bottom: 12px;
+	width: 280px;
+}
+.track-text{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+.track-menu{
+	width: 280px;
+}
+.tab,
+.info-icon{
+	cursor: pointer;
 }
