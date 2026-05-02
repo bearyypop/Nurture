@@ -25,8 +25,7 @@
         <div class="container">
             <!--logo images for both light and dark mode-->
             <div class="logo-imgs">
-                <img src="images/porter-logo.webp" alt="outline of a bird"
-                    class="logo-light">
+                <img src="images/porter-logo.webp" alt="outline of a bird" class="logo-light">
             </div>
             <div class="logo-text">
                 <span>NURTURE</span>
@@ -42,17 +41,17 @@
         </div>
     </header>
     <main>
-         <!--Home Page-->
-            <section class="hero" id="home">
-                <div class="hero-text">
-                    <h1>NURTURE</h1>
-                    <h2>PORTER ROBINSON</h2>
-                    <!--explore button-->
-                    <a href="#moments" class="explore-btn">EXPLORE</a>
-                    <!--scroll down arrow-->
-                    <div class="scroll-down">↓</div>
-                </div>
-            </section>
+        <!--Home Page-->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h1>NURTURE</h1>
+                <h2>PORTER ROBINSON</h2>
+                <!--explore button-->
+                <a href="#moments" class="explore-btn">EXPLORE</a>
+                <!--scroll down arrow-->
+                <div class="scroll-down">↓</div>
+            </div>
+        </section>
 
         <!--Carousel-->
         <section class="moments" id="moments">
@@ -65,8 +64,7 @@
                 <!--first image in carousel-->
                 <div class="carousel-collection">
                     <img src="images/porter-robinson-landscape.jpg"
-                        alt="Porter Robinson running across a large lush green field."
-                        id="carousel-img">
+                        alt="Porter Robinson running across a large lush green field." id="carousel-img">
                 </div>
                 <!--next carousel img button-->
                 <button class="carousel-next-btn" type="button" aria-label="Next Moment"><img
@@ -77,76 +75,82 @@
         <!-- Inside Nurture; Info Tracklist-->
         <section class="inside-nurture" id="inside-nurture">
             <h2 class="inside-header">INSIDE NURTURE</h2>
-            <div class="nurture-tabs">
-                <button class="tab active-tab" type="button">tracklist</button>
-                <button class="tab" type="button">themes</button>
-                <button class="tab" type="button">about the album</button>
-            </div>
-            <!--Into Nurture Tabs content-->
-            <div class="nurture-content">
-                <div class="tab-panel active" id="tracks">
-                    <!--prototype tracklist in html until it's coded in JS-->
-                    <div class="tracklist-content">
-                        <div class="track-menu">
-                            <div class="track-items" data-index="0">
-                                <img src="images/info-icon.png" alt="green information icon" class="info-icon">
-                                <div class="track-text">
-                                    <span class="track-title">lifelike</span>
-                                    <span class="track-length">1:35</span>
+            <div class="nurture-framework">
+                <div class="nurture-tabs">
+                    <button class="tab active-tab" type="button">tracklist</button>
+                    <button class="tab" type="button">themes</button>
+                    <button class="tab" type="button">about the album</button>
+                </div>
+                <!--Into Nurture Tabs content-->
+                <div class="nurture-content">
+                    <div class="tab-panel active" id="tracks">
+                        <!--prototype tracklist in html until it's coded in JS-->
+                        <div class="tracklist-content">
+                            <div class="track-menu">
+                                <div class="track-items" data-index="0">
+                                    <img src="images/info-icon.png" alt="green information icon" class="info-icon">
+                                    <div class="track-text">
+                                        <span class="track-title">lifelike</span>
+                                        <span class="track-length">1:35</span>
+                                    </div>
+                                </div>
+                                <div class="track-items" data-index="1">
+                                    <img src="images/info-icon.png" alt="green information icon" class="info-icon">
+                                    <div class="track-text">
+                                        <span class="track-title">look at the sky</span>
+                                        <span class="track-length">5:10</span>
+                                    </div>
+                                </div>
+                                <div class="track-items" data-index="2">
+                                    <img src="images/info-icon.png" alt="green information icon" class="info-icon">
+                                    <div class="track-text">
+                                        <span class="track-title">get your wish</span>
+                                        <span class="track-length">3:39</span>
+                                    </div>
+                                </div>
+                                <div class="track-items" data-index="3">
+                                    <img src="images/info-icon.png" alt="green information icon" class="info-icon">
+                                    <div class="track-text">
+                                        <span class="track-title">wind tempos</span>
+                                        <span class="track-length">6:04</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="track-items" data-index="1">
-                                <img src="images/info-icon.png" alt="green information icon" class="info-icon">
-                                <div class="track-text">
-                                    <span class="track-title">look at the sky</span>
-                                    <span class="track-length">5:10</span>
-                                </div>
+                            <!--right side content that includes the song title image, and a personal description from Porter Robinson-->
+                            <div class="track-display">
+                                <img src="images/lifelike.png" alt="Nurture album visual for Lifelike" class="track-img"
+                                    id="track-img">
+        
+                                <h3 id="song-title">lifelike</h3>
+                                <p class="track-description" id="track-description"><em> I wanted to start off the album
+                                        with the simplest and most
+                                        fundamental possible sounds, which is that “sample pop” and then the sound of
+                                        the
+                                        piano. There's this idea of a "window' or a "portal" that appears a lot in the
+                                        nurture art... I think of lifelike as kind of serving that purpose on the album.
+                                        a
+                                        little portal into the worldview.</em></p>
+                                <span class="author" id="author">— Porter Robinson</span>
                             </div>
-                            <div class="track-items" data-index="2">
-                                <img src="images/info-icon.png" alt="green information icon" class="info-icon">
-                                <div class="track-text">
-                                    <span class="track-title">get your wish</span>
-                                    <span class="track-length">3:39</span>
-                                </div>
-                            </div>
-                            <div class="track-items" data-index="3">
-                                <img src="images/info-icon.png" alt="green information icon" class="info-icon">
-                                <div class="track-text">
-                                    <span class="track-title">wind tempos</span>
-                                    <span class="track-length">6:04</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--right side content that includes the song title image, and a personal description from Porter Robinson-->
-                        <div class="track-display">
-                            <img src="images/lifelike.png" alt="Nurture album visual for Lifelike" class="track-img"
-                                id="track-img">
-
-                            <h3 id="song-title">lifelike</h3>
-                            <p class="track-description" id="track-description"><em> I wanted to start off the album
-                                    with the simplest and most
-                                    fundamental possible sounds, which is that “sample pop” and then the sound of the
-                                    piano. There's this idea of a "window' or a "portal" that appears a lot in the
-                                    nurture art... I think of lifelike as kind of serving that purpose on the album. a
-                                    little portal into the worldview.</em></p>
-                            <span class="author" id="author">— Porter Robinson</span>
                         </div>
                     </div>
-                </div>
-                <!-- themes tab and info-->
-                <div class="tab-panel" id="themes">
-                    <h3 class="themes-header">themes</h3>
-                    <p class="themes-text"><em>Nurture blends soft piano melodies with nature-inspired sounds to create
-                            something warm and alive. The album provides another level of intimacy— as if it's speaking
-                            directly to the listener.</em></p>
-                </div>
-                <!--about the album tab and info-->
-                <div class="tab-panel" id="about">
-                    <h3 class="about-header">about the album</h3>
-                    <p class="about-album-text"><em>Nurture carries a soft, melancholic beauty, shaped by themes of
-                            depression, healing, and learning to find meaning in everyday life and the natural world.
-                            Influenced by works such as Wolf Children, the album also explores love and family in ways
-                            that feel deeply personal.</em></p>
+        
+        
+                    <!-- themes tab and info-->
+                    <div class="tab-panel" id="themes">
+                        <h3 class="themes-header">themes</h3>
+                        <p class="themes-text"><em>Nurture blends soft piano melodies with nature-inspired sounds to create
+                                something warm and alive. The album provides another level of intimacy— as if it's speaking
+                                directly to the listener.</em></p>
+                    </div>
+                    <!--about the album tab and info-->
+                    <div class="tab-panel" id="about">
+                        <h3 class="about-header">about the album</h3>
+                        <p class="about-album-text"><em>Nurture carries a soft, melancholic beauty, shaped by themes of
+                                depression, healing, and learning to find meaning in everyday life and the natural world.
+                                Influenced by works such as Wolf Children, the album also explores love and family in ways
+                                that feel deeply personal.</em></p>
+                    </div>
                 </div>
             </div>
         </section>
