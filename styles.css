@@ -428,6 +428,10 @@ nav{
 .track-display{
 	box-shadow: 0 4px 12px rgba(65, 86, 69, 0.15);
 }
+.track-menu{
+	max-height: 500px;
+	overflow-y: auto;
+}
 
 /**right side content**/
 .tracklist-content{
