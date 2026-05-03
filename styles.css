@@ -392,6 +392,7 @@ nav{
 	white-space: nowrap;
 }
 .track-text{
+	gap: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -424,6 +425,10 @@ nav{
 	color: var(--forest);
 	letter-spacing: 0.5px;
 }
+.track-items,
+.track-items * {
+	cursor: pointer;
+}
 .track-menu,
 .track-display{
 	box-shadow: 0 4px 12px rgba(65, 86, 69, 0.15);
@@ -451,12 +456,13 @@ nav{
 	border-radius: 8px;
 	overflow: hidden;
 	margin-top: -1px;
+	padding: 24px;
 }
 .track-img{
-	width: 100%;
+	width: 90%;
 	max-width: 420px;
 	height: 220px;
-	object-fit: cover;
+	object-fit: contain;
 	border-radius: 4px 4px 0 0;
 	display: block;
 	margin-bottom: 8px;

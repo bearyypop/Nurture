@@ -7,8 +7,29 @@ $(function () {
     const trackTitle = document.querySelector("#song-title");
     const songs = document.querySelectorAll(".track-items");
 
+    // will get our array of songs
     $.getJSON("tracks.json", function(songs){
-        console.log(songs);
+        // this will empty the hard coded HTML track list
+        $(".track-menu").empty();
+
+        songs.forEach(function(track, index){
+            $(".track-menu").append(
+                '<div class="track-items" data-index="' + index + '">' +
+                '<img src="images/info-icon.png" alt="green information icon" class="info-icon">' +
+                '<div class="track-text">' +
+                '<span class="track-title">' + track.title + '</span>' +
+                '<span class="track-length">' + track.length + '</span>' +
+                '</div>' +
+                '</div>'
+            );
+            $(".track-items").last().click(function(){
+                trackTitle.textContent = track.title;
+                 $("#track-img").attr("src", track.image);
+                 $("#song-title").text(track.title);
+                 $("#track-description").text(track.description);
+                 $("#author").text(track.author);
+            });
+        });
     });
 
     songs.forEach(song => {
