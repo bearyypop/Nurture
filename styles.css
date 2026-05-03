@@ -80,7 +80,7 @@ table {
 *, 
 *::before, 
 *::after{
-	box-sizing: border box;
+	box-sizing: border-box;
 }
 body{
 	margin: 0;
@@ -261,10 +261,9 @@ nav{
 .moments{
 	width: 100%;
 	max-width: 1280px;
+	margin-top: 80px;
 	margin: 0 auto;
 	padding: 80px 48px;
-	
-
 	background: rgba(110, 143, 116, 0.18);
 	backdrop-filter: blur(6px);
 	border-radius: 16px;
@@ -404,6 +403,15 @@ nav{
 	border-radius: 8px;
 	overflow: hidden;
 }
+.tab-panel{
+	display: none;
+}
+.tab-panel.active{
+	display: block;
+}
+.active-tab{
+	background-color: var(--sage);
+}
 .tab,
 .tab-icon{
 	cursor: pointer;
@@ -429,6 +437,10 @@ nav{
 	width: 100%;
 }
 .track-display{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	flex: 1;
 	width: 420px;
 	background: var(--cream);
@@ -469,10 +481,35 @@ nav{
 	
 }
 
-/**themes and about hidden as it'll be done in js**/
+/**themes and about**/
 #themes,
 #about{
-	display: none;
+	padding: 40px 40px;
+	text-align: center;
+	background-color: var(--cream);
+	border-radius: 6px;
+	padding: 32px 40px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.themes-header,
+.about-header{
+	font-family: var(--font-heading);
+	color: var(--forest);
+	font-size: 32px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+.themes-text,
+.about-album-text{
+	font-family: var(--font-main);
+	color: var(--forest);
+	font-size: 20px;
+	line-height: 1.7;
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 /**Newsletter Section**/
