@@ -5,13 +5,18 @@ $(function () {
     // Tracklist tab under "Inside Nurture"
     // setting constants that link to our song titles
     const trackTitle = document.querySelector("#song-title");
-    const tracks = document.querySelectorAll(".track-items");
-    tracks.forEach(track => {
+    const songs = document.querySelectorAll(".track-items");
+
+    $.getJSON("tracks.json", function(songs){
+        console.log(songs);
+    });
+
+    songs.forEach(song => {
 
         // when user clicks anywhere on track title/info it recognizes which song and order it's clicking from
-        track.addEventListener("click", () => {
-            const trackIndex = track.dataset.index;
-            const title = track.querySelector(".track-title").textContent;
+        song.addEventListener("click", () => {
+            const trackIndex = song.dataset.index;
+            const title = song.querySelector(".track-title").textContent;
 
             trackTitle.textContent = title;
 
