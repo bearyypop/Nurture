@@ -103,8 +103,8 @@ $(".carousel-prev-btn").click(function(){
         localStorage.setItem("nurtureName", nameInput.value);
         localStorage.setItem("nurtureEmail", emailInput.value);
 
-        // changes privacy message to a "thank you" upon signing up
-        privacyText.textContent = "Thank you for signing up, " + nameInput.value + "!";
+        // changes privacy message to a "thank you" upon signing up. Grabs the name from the local storage to show that it's saved
+        privacyText.textContent = "Thank you for signing up, " + localStorage.getItem('nurtureName') + "!";
     });
 
 });
