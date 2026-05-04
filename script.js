@@ -56,9 +56,6 @@ $(".carousel-prev-btn").click(function(){
     $("#carousel-img").attr("src", carouselImages[currentImage]);
 });
 
-
-
-
     // Tracklist tab under "Inside Nurture"
     // setting constants that link to our song titles
     const trackTitle = document.querySelector("#song-title");
@@ -91,4 +88,23 @@ $(".carousel-prev-btn").click(function(){
         });
     });
     
+    //newsletter form web storage
+    const form = document.querySelector(".newsletter-form");
+    const nameInput = document.querySelector("#name");
+    const emailInput = document.querySelector("#email");
+    const privacyText = document.querySelector("#privacy-text");
+
+    
+    form.addEventListener("submit", function(event){
+        // will stop form from refreshing
+        event.preventDefault();
+
+        // will save Name and Email
+        localStorage.setItem("nurtureName", nameInput.value);
+        localStorage.setItem("nurtureEmail", emailInput.value);
+
+        // changes privacy message to a "thank you" upon signing up
+        privacyText.textContent = "Thank you for signing up, " + nameInput.value + "!";
+    });
+
 });
