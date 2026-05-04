@@ -32,7 +32,7 @@ const carouselImages = [
 
 // "next" carousel button
 $(".carousel-next-btn").click(function(){
-    // this will iterate through the images
+    // this will iterate up through the images in the array
     currentImage++;
 
     // this if statement will loop the carousel back to the first image upon reaching the end of the array
@@ -43,6 +43,18 @@ $(".carousel-next-btn").click(function(){
     $("#carousel-img").attr("src", carouselImages[currentImage]);
 });
 
+// "previous" carousel button
+$(".carousel-prev-btn").click(function(){
+// this will iterate down through the images in the array
+    currentImage--;
+
+    // this if-statement says it will jump to the last image if we click the previous button on the first image in the array
+    if(currentImage < 0){
+        currentImage = carouselImages.length -1;
+    }
+    // changes the image with the previous image
+    $("#carousel-img").attr("src", carouselImages[currentImage]);
+});
 
 
 
