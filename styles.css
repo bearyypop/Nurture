@@ -279,6 +279,13 @@ nav{
 }
 
 /**Carousel**/
+.carousel-collection{
+	width: 850px;
+	height: 520px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .carousel{
 	display: flex;
 	align-items: center;
@@ -300,7 +307,7 @@ nav{
 	transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-
+/** carousel buttons**/
 .carousel-prev-btn img,
 .carousel-next-btn img{
 	width: 150px;
@@ -309,13 +316,15 @@ nav{
 	display: block;
 }
 #carousel-img{
-	width: 850px;
-	max-width: 100%;
+	max-width: 850px;
+	width: auto;
 	height: auto;
+	object-fit: contain;
+	max-height: 520px;
 	display: block;
 	margin: 0 auto;
 	border-radius: 16px;
-	box-shadow: 0 12px 32px rgba(65, 86, 69, 0.35);
+	background: transparent;
 }
 .carousel-prev-btn:hover img,
 .carousel-next-btn:hover img{
@@ -404,6 +413,8 @@ nav{
 	border-radius: 8px;
 	overflow: hidden;
 }
+
+/**tab styling**/
 .tab-panel{
 	display: none;
 }
