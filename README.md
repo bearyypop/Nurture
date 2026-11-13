@@ -1,6 +1,6 @@
-# Nurture — An Interactive Album Tribute Website
+# Nurture — *An Interactive Album Tribute Website*
 
-*A fan-made interactive website inspired by Porter Robinson's album Nurture.*
+
 
 ## Project Overview
 
